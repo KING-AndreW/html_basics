@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fourth Page</title>
+  </head>
+
+  <body>
+    <h4>Registration Form</h4>
+    <!-- form is used to collect data from user -->
+    <!-- action attribute is used to define what action needs to be performed when a form is submitted -->
+    <form action="/action.php">
+      <input type="text" placeholder="username" />
+      <br /><br />
+      <input type="password" placeholder="password" />
+      <br /><br />
+
+      <h5>Select Your Class</h5>
+      <!-- label is used if we want to click on the name itself and maybe not on the bullet point -->
+      <label for="101">
+        <input type="radio" value="class XI" name="class" id="101" />class XI
+      </label>
+      <br /><br />
+      <label for="102">
+        <input type="radio" value="class XII" name="class" id="102" />class XII
+      </label>
+      <br />
+      <br />
+
+      <h5>Select Favourite Subjects</h5>
+
+      <!-- checkbox is used to select multiple options -->
+      <label for="math">
+        <input type="checkbox" value="math" name="subject" id="101" />Maths
+      </label>
+      <br /><br />
+      <label for="phy">
+        <input type="checkbox" value="phy" name="subject" id="102" />Physics
+      </label>
+      <br /><br />
+      <label for="chem">
+        <input type="checkbox" value="chem" name="subject" id="103" />Chemistry
+      </label>
+      <br /><br />
+      <label for="cs">
+        <input type="checkbox" value="cs" name="subject" id="104" />Computer
+        Science
+      </label>
+      <br />
+      <br />
+
+      Select your city
+      <select name="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+      </select>
+      <br /><br />
+
+      <textarea
+        name="feedback"
+        id="101"
+        placeholder="Please give your valuable feedback here"
+        rows="5"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="submit" /> button doesn't work rn ;-;
+    </form>
+    <br /><br />
+    <a href="/index5.html">Click here to go to Last Fifth Page</a>
+  </body>
+</html>
